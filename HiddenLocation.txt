@@ -1,0 +1,109 @@
+{
+
+"name": "HiddenLocation",
+
+"type": "object",
+
+"properties": {
+
+"name": {
+
+"type": "string"
+
+},
+
+"description": {
+
+"type": "string"
+
+},
+
+"lat": {
+
+"type": "number"
+
+},
+
+"lng": {
+
+"type": "number"
+
+},
+
+"city": {
+
+"type": "string"
+
+},
+
+"country": {
+
+"type": "string"
+
+},
+
+"category": {
+
+"type": "string",
+
+"enum": [
+
+"nature",
+
+"cultural",
+
+"adventure",
+
+"food",
+
+"historic",
+
+"spiritual"
+
+]
+
+},
+
+"local_contact_name": {
+
+"type": "string"
+
+},
+
+"local_contact_phone": {
+
+"type": "string"
+
+},
+
+"tags": {
+
+"type": "string"
+
+},
+
+"image_url": {
+
+"type": "string"
+
+},
+
+"rating": {
+
+"type": "number"
+
+}
+
+},
+
+"required": [
+
+"name",
+
+"lat",
+
+"lng"
+
+]
+
+}

@@ -1,0 +1,99 @@
+{
+
+"name": "CityChallenge",
+
+"type": "object",
+
+"properties": {
+
+"user_email": {
+
+"type": "string"
+
+},
+
+"city": {
+
+"type": "string"
+
+},
+
+"challenges": {
+
+"type": "array",
+
+"items": {
+
+"type": "object",
+
+"properties": {
+
+"id": {
+
+"type": "string"
+
+},
+
+"text": {
+
+"type": "string"
+
+},
+
+"completed": {
+
+"type": "boolean"
+
+},
+
+"points": {
+
+"type": "number"
+
+}
+
+}
+
+}
+
+},
+
+"total_points": {
+
+"type": "number"
+
+},
+
+"expires_at": {
+
+"type": "string"
+
+},
+
+"status": {
+
+"type": "string",
+
+"enum": [
+
+"active",
+
+"completed",
+
+"expired"
+
+]
+
+}
+
+},
+
+"required": [
+
+"user_email",
+
+"city"
+
+]
+
+}

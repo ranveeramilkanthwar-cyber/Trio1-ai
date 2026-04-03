@@ -1,0 +1,195 @@
+{
+
+"name": "Trip",
+
+"type": "object",
+
+"properties": {
+
+"title": {
+
+"type": "string"
+
+},
+
+"destination": {
+
+"type": "string"
+
+},
+
+"start_date": {
+
+"type": "string",
+
+"format": "date"
+
+},
+
+"end_date": {
+
+"type": "string",
+
+"format": "date"
+
+},
+
+"budget": {
+
+"type": "string",
+
+"enum": [
+
+"budget",
+
+"moderate",
+
+"luxury"
+
+],
+
+"default": "moderate"
+
+},
+
+"travelers": {
+
+"type": "number",
+
+"default": 1
+
+},
+
+"interests": {
+
+"type": "string"
+
+},
+
+"itinerary": {
+
+"type": "array",
+
+"items": {
+
+"type": "object",
+
+"properties": {
+
+"day": {
+
+"type": "number"
+
+},
+
+"title": {
+
+"type": "string"
+
+},
+
+"description": {
+
+"type": "string"
+
+},
+
+"places": {
+
+"type": "array",
+
+"items": {
+
+"type": "object",
+
+"properties": {
+
+"name": {
+
+"type": "string"
+
+},
+
+"lat": {
+
+"type": "number"
+
+},
+
+"lng": {
+
+"type": "number"
+
+},
+
+"time": {
+
+"type": "string"
+
+},
+
+"description": {
+
+"type": "string"
+
+},
+
+"type": {
+
+"type": "string"
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+},
+
+"status": {
+
+"type": "string",
+
+"enum": [
+
+"planning",
+
+"active",
+
+"completed"
+
+],
+
+"default": "planning"
+
+},
+
+"cover_image": {
+
+"type": "string"
+
+},
+
+"user_email": {
+
+"type": "string"
+
+}
+
+},
+
+"required": [
+
+"title",
+
+"destination"
+
+]
+
+}

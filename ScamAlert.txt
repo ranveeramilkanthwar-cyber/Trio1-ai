@@ -1,0 +1,105 @@
+{
+
+"name": "ScamAlert",
+
+"type": "object",
+
+"properties": {
+
+"city": {
+
+"type": "string"
+
+},
+
+"country": {
+
+"type": "string"
+
+},
+
+"location_detail": {
+
+"type": "string"
+
+},
+
+"scam_type": {
+
+"type": "string",
+
+"enum": [
+
+"taxi",
+
+"pickpocket",
+
+"overcharge",
+
+"fake_police",
+
+"distraction",
+
+"other"
+
+]
+
+},
+
+"description": {
+
+"type": "string"
+
+},
+
+"severity": {
+
+"type": "string",
+
+"enum": [
+
+"low",
+
+"medium",
+
+"high"
+
+]
+
+},
+
+"reported_by": {
+
+"type": "string"
+
+},
+
+"upvotes": {
+
+"type": "number",
+
+"default": 0
+
+},
+
+"verified": {
+
+"type": "boolean",
+
+"default": false
+
+}
+
+},
+
+"required": [
+
+"city",
+
+"scam_type",
+
+"description"
+
+]
+
+}

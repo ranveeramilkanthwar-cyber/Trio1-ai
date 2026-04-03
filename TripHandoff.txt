@@ -1,0 +1,83 @@
+{
+
+"name": "TripHandoff",
+
+"type": "object",
+
+"properties": {
+
+"trip_id": {
+
+"type": "string"
+
+},
+
+"owner_email": {
+
+"type": "string"
+
+},
+
+"shared_with": {
+
+"type": "string"
+
+},
+
+"permissions": {
+
+"type": "string",
+
+"enum": [
+
+"view",
+
+"edit",
+
+"full"
+
+]
+
+},
+
+"handoff_code": {
+
+"type": "string"
+
+},
+
+"status": {
+
+"type": "string",
+
+"enum": [
+
+"pending",
+
+"accepted",
+
+"active"
+
+]
+
+},
+
+"notes": {
+
+"type": "string"
+
+}
+
+},
+
+"required": [
+
+"trip_id",
+
+"owner_email",
+
+"handoff_code"
+
+]
+
+}

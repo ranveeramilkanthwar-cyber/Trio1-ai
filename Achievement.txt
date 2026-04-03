@@ -1,0 +1,85 @@
+{
+
+"name": "Achievement",
+
+"type": "object",
+
+"properties": {
+
+"user_email": {
+
+"type": "string"
+
+},
+
+"badge_id": {
+
+"type": "string"
+
+},
+
+"badge_name": {
+
+"type": "string"
+
+},
+
+"badge_icon": {
+
+"type": "string"
+
+},
+
+"description": {
+
+"type": "string"
+
+},
+
+"category": {
+
+"type": "string",
+
+"enum": [
+
+"food",
+
+"transport",
+
+"culture",
+
+"adventure",
+
+"social",
+
+"eco"
+
+]
+
+},
+
+"unlocked_at": {
+
+"type": "string"
+
+},
+
+"destination": {
+
+"type": "string"
+
+}
+
+},
+
+"required": [
+
+"user_email",
+
+"badge_id",
+
+"badge_name"
+
+]
+
+}

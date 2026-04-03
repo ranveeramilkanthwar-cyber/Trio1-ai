@@ -1,0 +1,107 @@
+{
+
+"name": "PackingList",
+
+"type": "object",
+
+"properties": {
+
+"user_email": {
+
+"type": "string"
+
+},
+
+"trip_destination": {
+
+"type": "string"
+
+},
+
+"duration_days": {
+
+"type": "number"
+
+},
+
+"activities": {
+
+"type": "string"
+
+},
+
+"items": {
+
+"type": "array",
+
+"items": {
+
+"type": "object",
+
+"properties": {
+
+"name": {
+
+"type": "string"
+
+},
+
+"category": {
+
+"type": "string"
+
+},
+
+"packed": {
+
+"type": "boolean"
+
+},
+
+"essential": {
+
+"type": "boolean"
+
+},
+
+"warning": {
+
+"type": "string"
+
+}
+
+}
+
+}
+
+},
+
+"airline": {
+
+"type": "string"
+
+},
+
+"warnings": {
+
+"type": "array",
+
+"items": {
+
+"type": "string"
+
+}
+
+}
+
+},
+
+"required": [
+
+"user_email",
+
+"trip_destination"
+
+]
+
+}
